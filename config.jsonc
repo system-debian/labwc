@@ -1,0 +1,86 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 30,
+  "spacing": 8,
+  
+  "modules-left": [
+    "custom/menu",
+    "wlr/workspaces",
+    "cpu",
+    "memory",
+    "network",
+    "clock",
+    "wlr/taskbar"
+  ],
+  "modules-center": [],
+  "modules-right": [
+    "tray"
+  ],
+
+  "custom/menu": {
+    "format": "󰣇  MENU",
+    "tooltip": false,
+    "on-click": "wofi --show drun"
+  },
+
+  "wlr/workspaces": {
+    "format": "{icon}",
+    "on-click": "activate",
+    "all-outputs": true,
+    "sort-by-number": true,
+    "format-icons": {
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "urgent": "",
+      "active": "",
+      "default": ""
+    }
+  },
+
+  "wlr/taskbar": {
+    "format": "{icon}",
+    "icon-size": 16,
+    "icon-theme": "Papirus",
+    "spacing": 5,
+    "tooltip-format": "{title}",
+    "on-click": "activate",
+    "on-click-middle": "close",
+    "app_ids-mapping": {
+      "firefox": "firefox"
+    }
+  },
+
+  "cpu": {
+    "format": "  CPU: {usage}%",
+    "tooltip": true,
+    "interval": 2
+  },
+
+  "memory": {
+    "format": "  RAM: {used:0.1f}GB / {total:0.1f}GB | SWAP: {swapUsed:0.1f}GB / {swapTotal:0.1f}GB",
+    "tooltip-format": "RAM Livre: {free}GB / Total: {total}GB\nSwap Livre: {swapAvail}GB / Total: {swapTotal}GB",
+    "interval": 2
+  },
+
+  "network": {
+    "format-wifi": "  Online ({essid}) - {ipaddr}",
+    "format-ethernet": "󰈀  Online - {ipaddr}",
+    "format-disconnected": "󰖪  Offline",
+    "tooltip-format": "Interface: {ifname}\nGateway: {gwaddr}\nIP: {ipaddr}",
+    "interval": 5
+  },
+
+  "clock": {
+    "format": "󰥔  {:%d/%m/%Y - %H:%M}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+  },
+
+  "tray": {
+    "icon-size": 18,
+    "spacing": 10
+  }
+}
