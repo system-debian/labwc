@@ -1,0 +1,1 @@
+dash coreutils libc6, zlib1g, libbz2-1.0, liblzma5, libgl1, libgl1-mesa-dri, libfontconfig1, libfreetype6, libglib2.0-0t64, libqt6core6, libqt5core5t64 libx11-dev libgdk-pixbuf-xlib-2.0-dev libpango1.0-dev libgtk2.0-dev libqt6pas6
