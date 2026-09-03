@@ -1,1 +1,1 @@
-
+git p7zip cifs-utils gvfs gvfs-backends gvfs-fuse smbclient adwaita-icon-theme xcursor-themes zip xz-utils unzip sudo curl man meson htop
